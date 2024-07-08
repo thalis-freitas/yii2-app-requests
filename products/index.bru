@@ -1,0 +1,22 @@
+meta {
+  name: index
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/products?per-page=20&page=1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  per-page: 20
+  page: 1
+  ~customerId: 2
+  ~sort: price
+}
+
+auth:bearer {
+  token: {{USER_TOKEN}}
+}

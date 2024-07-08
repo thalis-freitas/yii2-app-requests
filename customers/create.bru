@@ -1,0 +1,36 @@
+meta {
+  name: create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/customers/create
+  body: multipartForm
+  auth: bearer
+}
+
+params:query {
+  : 
+}
+
+headers {
+  Content-Type: application/json; charset=UTF-8
+}
+
+auth:bearer {
+  token: {{USER_TOKEN}}
+}
+
+body:multipart-form {
+  name: João da Silva
+  registration_number: 41045733024
+  address[zip_code]: 03318000
+  address[street]: Rua Serra de Bragança
+  address[number]: 123
+  address[city]: São Paulo
+  address[state]: SP
+  address[complement]: Vila Gomes Cardim
+  gender_id: 2
+  photo: @file(/home/thalis/Pictures/Screenshots/Screenshot from 2024-07-06 22-27-04.png)
+}
