@@ -1,0 +1,23 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/auth/login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "login": "user",
+      "password": "pass"
+  }
+  
+}

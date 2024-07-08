@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Yii App",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
