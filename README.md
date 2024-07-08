@@ -11,7 +11,6 @@ Para utilizar as requisições armazenadas neste repositório com o Bruno, siga 
 2. **Clone este repositório:**
    ```bash
    git clone git@github.com:thalis-freitas/yii2-app-requests.git
-   cd yii2-app-requests
    ```
 3. **Acessar requisições com o Bruno**:
 Abra o Bruno e direcione-o para a pasta clonada, ele irá carregar todos os arquivos `.bru` disponíveis. Você agora poderá visualizar, editar e enviar requisições diretamente pelo Bruno.
